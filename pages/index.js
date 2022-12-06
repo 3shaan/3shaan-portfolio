@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { AboutMe } from '../components/AboutMe';
+import { Contact } from '../components/Contact';
 import { Main } from '../components/Main';
 import Navbar from '../components/Navbar'
 import { Project } from '../components/Project';
@@ -21,6 +22,7 @@ export default function Home() {
         <AboutMe></AboutMe>
         <Skill></Skill>
         <Project></Project>
+        <Contact></Contact>
       </div>
     </div>
   );

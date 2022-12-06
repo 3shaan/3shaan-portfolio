@@ -17,17 +17,17 @@ export const Main = () => {
             my works and hire me, then please contact.
           </p>
           <div>
-            <div className="flex  w-8/12 gap-10 my-4 mx-auto">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
+            <div className=" grid grid-cols-4 md:grid-cols-4  w-8/12 gap-10 my-4 mx-auto">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14">
                 <FaFacebookF size={30}></FaFacebookF>
               </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14">
                 <FaGithub size={30}></FaGithub>
               </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14">
                 <FaLinkedinIn size={30}></FaLinkedinIn>
               </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14">
                 <AiOutlineMail size={30}></AiOutlineMail>
               </div>
             </div>

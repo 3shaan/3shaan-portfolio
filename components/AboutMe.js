@@ -10,14 +10,11 @@ export const AboutMe = () => {
             <div className="col-span-2">
               <div className="mt-10 w-10/12">
                 <p className=" text-xl">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
-                  consequatur expedita cupiditate vel vitae, alias voluptatibus
-                  ducimus, nam beatae autem harum odio? Ipsa provident non cum
-                  assumenda odio eum veniam. Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. A magni eveniet ad ipsam
-                  temporibus cum quos. Ipsam debitis minima, impedit excepturi
-                  adipisci, magni quos, ad nulla exercitationem dolores
-                  perspiciatis autem.
+                  Hi! I am Eshan Ahammed, a web developer focused on crafting great user-friendly , Customized, responsive and feature-rich website. Programming have been my passion since the days I started working with computers. I enjoy writing program and build new things and functionality with logic.
+                </p>
+                <br />
+                <p className=" text-xl">
+                  I have almost 1 year of experience in the Web development sector. I love to learn new technologies everyday and implement it into website.
                 </p>
               </div>
             </div>

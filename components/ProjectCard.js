@@ -7,14 +7,25 @@ export const ProjectCard = () => {
   return (
     <div className="flex justify-center items-center my-20">
       <div>
-        <div className="relative p-4 h-auto shadow-xl shadow-gray-400 rounded-xl w-96">
-          <Image
-            className="rounded-xl group-hover:opacity-10"
-            src={mind}
-            alt="/"
-            width={400}
-          />
+        <div className="relative p-4 h-auto shadow-xl shadow-gray-400 rounded-xl lg:w-[500px] bg-white group overflow-hidden">
+          <div className=" transform group-hover:scale-110 ease-in-out duration-500">
+            <Image className="rounded-xl" src={mind} alt="/" width={500} />
+          </div>
           <div className="mt-3">
+            <div className="grid grid-cols-4 gap-3 py-2">
+              <p className="rounded-full py-1 px-2 shadow-2xl shadow-gray-200 bg-primary/80 text-white font-semibold text-sm text-center">
+                React
+              </p>
+              <p className="rounded-full py-1 px-2 shadow-2xl shadow-gray-200 bg-primary/80 text-white font-semibold text-sm text-center">
+                Tailwind
+              </p>
+              <p className="rounded-full py-1 px-2 shadow-2xl shadow-gray-200 bg-primary/80 text-white font-semibold text-sm text-center">
+                Node Js
+              </p>
+              <p className="rounded-full py-1 px-2 shadow-2xl shadow-gray-200 bg-primary/80 text-white font-semibold text-sm text-center">
+                MongoDB
+              </p>
+            </div>
             <h3 className="text-xl">Mind Talking</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
