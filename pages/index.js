@@ -7,7 +7,8 @@ import Navbar from '../components/Navbar'
 import { Project } from '../components/Project';
 import { Skill } from '../components/Skill';
 
-export default function Home() {
+export default function Home({ data }) {
+  console.log(data)
   return (
     <div>
       <Head>
@@ -21,9 +22,19 @@ export default function Home() {
         <Main></Main>
         <AboutMe></AboutMe>
         <Skill></Skill>
-        <Project></Project>
+        <Project projects={data}></Project>
         <Contact></Contact>
       </div>
     </div>
   );
 }
+
+export const getServerSideProps = async () => {
+  const res = await fetch("http://localhost:5000/project");
+  const data = await res.json();
+  return {
+    props: {
+      data
+    }
+  }
+};
