@@ -3,13 +3,32 @@ import Link from "next/link";
 import eshan from "../public/Eshan.png";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaFacebook, FaGithub, FaLinkedin, FaLinkedinIn, FaMailBulk, FaMailchimp } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const Navbar = () => {
   const [nav, SetNav] = useState();
+  const [shadow, setShadow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      }
+      else {
+        setShadow(false);
+      }
+    })
+  },[])
     return (
       <div>
-        <div className="w-full shadow-xl z-[100] h-20 px-10">
-          <div className="flex justify-between items-center h-full px-2">
+        <div
+          style={{ backgroundColor: "#ecf0f3" }}
+          className={
+            shadow
+              ? "fixed w-full shadow-xl z-[100] h-20 px-10 ease-in-out duration-300"
+              : "fixed w-full z-[100] h-20 px-10"
+          }
+        >
+          <div className="flex justify-between items-center h-full w-full px-2">
             <Image
               className="bg-[#ecf0f3]"
               src="/../public/Eshan.png"
@@ -20,27 +39,27 @@ const Navbar = () => {
             <div>
               <ul className="hidden md:flex ">
                 <Link href="">
-                  <li className="ml-10 text-sm uppercase hover:border-b">
-                    Home
-                  </li>
+                  <Link href={''}>
+                    <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">Home</li>
+                  </Link>
                 </Link>
                 <Link href="">
-                  <li className="ml-10 text-sm uppercase hover:border-b">
+                  <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     About
                   </li>
                 </Link>
                 <Link href="">
-                  <li className="ml-10 text-sm uppercase hover:border-b">
+                  <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     Skill
                   </li>
                 </Link>
                 <Link href="">
-                  <li className="ml-10 text-sm uppercase hover:border-b">
+                  <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     Project
                   </li>
                 </Link>
                 <Link href="">
-                  <li className="ml-10 text-sm uppercase hover:border-b">
+                  <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     Contact
                   </li>
                 </Link>

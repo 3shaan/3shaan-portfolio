@@ -11,7 +11,7 @@ import SkillTabs from './SkillTabs';
 export const Skill = () => {
     return (
       <div className="w-10/12 mx-auto mb-10">
-        <p className="text-2xl text-center">Skill</p>
+        <h2 className="text-gray-700 text-center">Skill</h2>
         <div>
           <SkillTabs></SkillTabs>
         </div>

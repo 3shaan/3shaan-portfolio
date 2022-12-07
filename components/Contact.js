@@ -21,8 +21,10 @@ export const Contact = () => {
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src=""
+                  src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=996&t=st=1670398137~exp=1670398737~hmac=3a6fb09b2707221ce38246d8705bea34afb34f3b41dd3081d39658b8eb12cf48"
                   alt="/"
+                  height={200}
+                  width={500}
                 />
               </div>
               <div>
@@ -36,20 +38,18 @@ export const Contact = () => {
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
-                  
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14">
-                      <FaFacebookF size={30}></FaFacebookF>
-                    </div>
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
-                      <FaGithub size={30}></FaGithub>
-                    </div>
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
-                      <FaLinkedinIn size={30}></FaLinkedinIn>
-                    </div>
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
-                      <AiOutlineMail size={30}></AiOutlineMail>
-                    </div>
-                  
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14">
+                    <FaFacebookF size={30}></FaFacebookF>
+                  </div>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
+                    <FaGithub size={30}></FaGithub>
+                  </div>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
+                    <FaLinkedinIn size={30}></FaLinkedinIn>
+                  </div>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
+                    <AiOutlineMail size={30}></AiOutlineMail>
+                  </div>
                 </div>
               </div>
             </div>

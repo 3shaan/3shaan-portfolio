@@ -9,7 +9,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "i.ibb.co",
+        hostname: "**",
         pathname: "/*/**",
       },
     ],

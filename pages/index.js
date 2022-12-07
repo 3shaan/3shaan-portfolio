@@ -1,14 +1,14 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { AboutMe } from '../components/AboutMe';
-import { Contact } from '../components/Contact';
-import { Main } from '../components/Main';
-import Navbar from '../components/Navbar'
-import { Project } from '../components/Project';
-import { Skill } from '../components/Skill';
+import Head from "next/head";
+import Image from "next/image";
+import { AboutMe } from "../components/AboutMe";
+import { Contact } from "../components/Contact";
+import { Main } from "../components/Main";
+import Navbar from "../components/Navbar";
+import { Project } from "../components/Project";
+import { Skill } from "../components/Skill";
 
 export default function Home({ data }) {
-  console.log(data)
+  console.log(data);
   return (
     <div>
       <Head>
@@ -18,23 +18,24 @@ export default function Home({ data }) {
       </Head>
 
       <div>
-        <Navbar></Navbar>
-        <Main></Main>
-        <AboutMe></AboutMe>
-        <Skill></Skill>
-        <Project projects={data}></Project>
-        <Contact></Contact>
+        <div>
+          <Main></Main>
+          <AboutMe></AboutMe>
+          <Skill></Skill>
+          <Project projects={data}></Project>
+          <Contact></Contact>
+        </div>
       </div>
     </div>
   );
 }
 
 export const getServerSideProps = async () => {
-  const res = await fetch("http://localhost:5000/project");
+  const res = await fetch("https://portfolio-server-tau.vercel.app/project");
   const data = await res.json();
   return {
     props: {
-      data
-    }
-  }
+      data,
+    },
+  };
 };
