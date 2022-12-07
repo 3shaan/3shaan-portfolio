@@ -21,7 +21,7 @@ export const Contact = () => {
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=996&t=st=1670398137~exp=1670398737~hmac=3a6fb09b2707221ce38246d8705bea34afb34f3b41dd3081d39658b8eb12cf48"
+                  src="https://img.freepik.com/premium-vector/call-me-flat-design-illustration_188398-1825.jpg?w=740"
                   alt="/"
                   height={200}
                   width={500}

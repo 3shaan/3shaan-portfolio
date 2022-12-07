@@ -10,7 +10,7 @@ import SkillTabs from './SkillTabs';
 
 export const Skill = () => {
     return (
-      <div className="w-10/12 mx-auto mb-10">
+      <div id='skill' className="w-10/12 mx-auto mb-10">
         <h2 className="text-gray-700 text-center">Skill</h2>
         <div>
           <SkillTabs></SkillTabs>

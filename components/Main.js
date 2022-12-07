@@ -7,7 +7,7 @@ export const Main = () => {
     return <div className="text-[#5651e5]">Eshan</div>;
   }
   return (
-    <div className="w-full pt- h-[700px]">
+    <div id="home" className="w-full pt- h-[700px]">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <div className="text-6xl font-bold py-4 text-gray-700 w-8/12 mx-auto">

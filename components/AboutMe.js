@@ -6,7 +6,7 @@ import profile from '../public/profile.png'
 
 export const AboutMe = () => {
     return (
-      <div className="w-10/12 mx-auto mb-10 ">
+      <div id="aboutme" className="w-10/12 mx-auto mb-10 ">
         <div>
           <h2 className="text-gray-700 text-center mb-10">About me</h2>
           <div className="grid grid-cols-1 md:grid-cols-3">

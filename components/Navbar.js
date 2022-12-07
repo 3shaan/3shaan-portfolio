@@ -38,27 +38,27 @@ const Navbar = () => {
             />
             <div>
               <ul className="hidden md:flex ">
-                <Link href="">
-                  <Link href={''}>
+                <Link href="#home">
+                  
                     <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">Home</li>
-                  </Link>
+                  
                 </Link>
-                <Link href="">
+                <Link href="#aboutme">
                   <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     About
                   </li>
                 </Link>
-                <Link href="">
+                <Link href="#skill">
                   <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     Skill
                   </li>
                 </Link>
-                <Link href="">
+                <Link href="#project">
                   <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     Project
                   </li>
                 </Link>
-                <Link href="">
+                <Link href="#contact">
                   <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     Contact
                   </li>
