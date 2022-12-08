@@ -1,0 +1,50 @@
+[
+  {
+    "skill": "HTML",
+    "category": "front-end",
+    "percentage": "80",
+    "img": "https://i.ibb.co/F3f2zkG/html.png"
+  },
+  {
+    "skill": "CSS",
+    "category": "front-end",
+    "percentage": "70",
+    "img": "https://i.ibb.co/SR11W9K/css.png"
+  },
+  {
+    "skill": "JavaScript",
+    "category": "front-end",
+    "percentage": "80",
+    "img": "https://i.ibb.co/DzjGwWv/js.png"
+  },
+  {
+    "skill": "React Js",
+    "category": "front-end",
+    "percentage": "80",
+    "img": "https://i.ibb.co/SKZ3XDG/react.png"
+  },
+  {
+    "skill": "Node JS",
+    "category": "Back-end",
+    "percentage": "70",
+    "img": "https://i.ibb.co/VxrfTKH/node.png"
+  },
+  {
+    "skill": "MongoDB",
+    "category": "Back-end",
+    "percentage": "70",
+    "img": "https://i.ibb.co/t3JcQkB/mongodb.png"
+  },
+  {
+    "skill": "FireBase",
+    "category": "Back-end",
+    "percentage": "70",
+    "img": "https://i.ibb.co/KKGc5Mw/firebase.png"
+  },
+  {
+    "skill": "Figma",
+    "category": "tools",
+    "percentage": "60",
+    "img": "https://i.ibb.co/vBqNnNB/figma.png"
+  }
+]

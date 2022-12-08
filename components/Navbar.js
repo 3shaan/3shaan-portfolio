@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import eshan from "../public/Eshan.png";
+import logo from "../public/logo.png";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaFacebook, FaGithub, FaLinkedin, FaLinkedinIn, FaMailBulk, FaMailchimp } from "react-icons/fa";
 import { useEffect, useState } from "react";
@@ -28,20 +28,22 @@ const Navbar = () => {
               : "fixed w-full z-[100] h-20 px-10"
           }
         >
-          <div className="flex justify-between items-center h-full w-full px-2">
+          <div className="flex justify-between items-center h-full w-full px-2 overflow-hidden">
             <Image
               className="bg-[#ecf0f3]"
-              src="/../public/Eshan.png"
-              width={125}
+              src={logo}
+              width={150}
               height={50}
-              alt=""
+              alt="Eshan"
             />
+            {/* <h1 className="text-primary italic">ΣƧΉΛП</h1> */}
+
             <div>
               <ul className="hidden md:flex ">
                 <Link href="#home">
-                  
-                    <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">Home</li>
-                  
+                  <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
+                    Home
+                  </li>
                 </Link>
                 <Link href="#aboutme">
                   <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
@@ -84,7 +86,7 @@ const Navbar = () => {
                 >
                   <div className="flex justify-between items-center mt-10">
                     <Image
-                      src="/../public/Eshan.png"
+                      src={logo}
                       width={125}
                       height={50}
                       alt=""

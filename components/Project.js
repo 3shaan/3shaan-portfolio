@@ -1,17 +1,20 @@
+import { Animator, batch, Move, ZoomIn } from "react-scroll-motion";
 import { ProjectCard } from "./ProjectCard";
 
+
 export const Project = ({ projects }) => {
-    console.log(projects)
+    // console.log(projects)
     return (
-        <div id="project">
-            <h2 className="text-center text-gray-600 ">Project</h2>
-            <h3 className="text-center mt-2">What I Have build so far...</h3>
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-                {
-                    projects.map(project=><ProjectCard key={project._id} project={project}></ProjectCard>)
-                }
-                
-            </div>
-        </div>
+      <div id="project">
+        <h2 className="text-center text-gray-600 ">Project</h2>
+        <h3 className="text-center mt-2">What I Have build so far...</h3>
+      
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            {projects.map((project) => (
+              <ProjectCard key={project._id} project={project}></ProjectCard>
+            ))}
+          </div>
+        
+      </div>
     );
 };
