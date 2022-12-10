@@ -44,8 +44,7 @@ export const Main = () => {
             className="text-xl w-8/12 mx-auto"
             data-aos-mirror="true"
           >
-            I am a Junior Full Stack developer. This is my Portfolio. if u like
-            my works and hire me, then please contact.
+            I am a Junior Full Stack developer.I love to build feature-rich website.
           </p>
           <div
             data-aos="fade-up"
