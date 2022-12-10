@@ -21,17 +21,17 @@ export default function SkillTabs({ front_end, back_end, tools }) {
   return (
     <div className="w-full px-2 py-16 sm:px-0">
       <Tab.Group>
-        <Tab.List className="flex space-x-1 rounded-xl bg-gray-300 p-1 z-30">
+        <Tab.List className="flex gap-3 space-x-1 rounded-xl p-1 z-30 text-center">
           {Object.keys(categories).map((category, i) => (
             <Tab
               key={i}
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-primary",
+                  "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-primary text-center",
                   "ring-white ring-opacity-60 ring-offset-2 ring-offset-primary focus:outline-none focus:ring-2",
                   selected
-                    ? "bg-white shadow"
-                    : " hover:bg-white/[0.12] hover:text-blue-500"
+                    ? "bg-gradient-to-r from-[#5651e5] to-[#709dff] shadow text-white"
+                    : " bg-gray-300  hover:bg-white hover:text-white"
                 )
               }
             >
@@ -109,9 +109,9 @@ export default function SkillTabs({ front_end, back_end, tools }) {
           {tools.map((front) => (
             <div key={front?.id} className="w-28 relative group">
               <ReactVisibilitySensor>
-                {({ isVisible}) => {
+                {({ isVisible }) => {
                   const percent = isVisible ? front?.percentage : 0;
-                  
+
                   return (
                     <CircularProgressbarWithChildren
                       value={percent}

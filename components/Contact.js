@@ -10,10 +10,11 @@ export const Contact = () => {
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="w-10/12 m-auto px-2 py-16 ">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
-          Contact
-        </p>
-        <h2 className="py-4">Get In Touch</h2>
+        <div className="flex gap-3 justify-center">
+          <hr class="my-4 w-12 md:w-48  h-1 rounded border-0 bg-primary"></hr>
+          <h2 className="text-primary mb-10">Contact Me</h2>
+          <hr class="my-4 w-12 md:w-48 h-1  rounded border-0 bg-primary"></hr>
+        </div>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
           <div
@@ -71,7 +72,6 @@ export const Contact = () => {
                   >
                     <AiOutlineMail size={30}></AiOutlineMail>
                   </Link>
-                 
                 </div>
               </div>
             </div>
@@ -135,7 +135,7 @@ export const Contact = () => {
                     name="message"
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
+                <button className="w-full p-4 mt-4 text-center">
                   Send Message
                 </button>
               </form>

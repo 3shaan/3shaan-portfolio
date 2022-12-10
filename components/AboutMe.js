@@ -10,7 +10,11 @@ export const AboutMe = () => {
     return (
       <div id="aboutme" className="w-10/12 mx-auto mb-10">
         <div>
-          <h2 className="text-primary mb-10">About me</h2>
+          <div className="flex gap-3 justify-center">
+            <hr class="my-4 w-12 md:w-48  h-1 rounded border-0 bg-primary"></hr>
+            <h2 className="text-primary mb-10">About me</h2>
+            <hr class="my-4 w-12 md:w-48 h-1  rounded border-0 bg-primary"></hr>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3">
             <div
               data-aos="fade-right"
@@ -34,9 +38,11 @@ export const AboutMe = () => {
                   implement it into website.
                 </p>
                 <Link
+                  download
                   href={
                     "https://drive.google.com/file/d/1hiZCYFDSoeWdYT0AmpTAVOLelysx6Zz_/view?usp=sharing"
-                  } target="_blank"
+                  }
+                  target="_blank"
                   className="flex justify-center items-center mt-10"
                 >
                   <button className=" rounded-xl shadow-lg shadow-gray-400 p-3 cursor-pointer  hover:-translate-y-1 ease-in duration-300 bg-primary text-white">

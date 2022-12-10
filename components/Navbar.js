@@ -5,7 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaFacebook, FaGithub, FaLinkedin, FaLinkedinIn, FaMailBulk, FaMailchimp } from "react-icons/fa";
 import { useEffect, useState } from "react";
 const Navbar = () => {
-  const [nav, SetNav] = useState();
+  const [nav, SetNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const Navbar = () => {
               : "fixed w-full z-[100] h-20 px-10"
           }
         >
-          <div className="flex justify-between items-center h-full w-full px-2 overflow-hidden">
+          <div className=" flex justify-between items-center h-full w-full px-2 overflow-hidden">
             <Image
               className="bg-[#ecf0f3]"
               src={logo}
@@ -85,12 +85,7 @@ const Navbar = () => {
                   }
                 >
                   <div className="flex justify-between items-center mt-10">
-                    <Image
-                      src={logo}
-                      width={125}
-                      height={50}
-                      alt=""
-                    />
+                    <Image src={logo} width={125} height={50} alt="" />
                     <div
                       onClick={() => SetNav(false)}
                       className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -105,24 +100,23 @@ const Navbar = () => {
                   </div>
                   <div className="py-4 flex flex-col">
                     <ul className="uppercase">
-                      <Link href="">
+                      <Link href="/#home" onClick={() => SetNav(false)}>
                         <li className="py-4 text-sm">Home</li>
                       </Link>
-                      <Link href="">
-                        <li className="py-4 text-sm">ABout</li>
+                      <Link href="#aboutme" onClick={() => SetNav(false)}>
+                        <li className="py-4 text-sm">About</li>
                       </Link>
-                      <Link href="">
+                      <Link href="#skill" onClick={() => SetNav(false)}>
                         <li className="py-4 text-sm">Skill</li>
                       </Link>
-                      <Link href="">
+                      <Link href="#project" onClick={() => SetNav(false)}>
                         <li className="py-4 text-sm">Project</li>
                       </Link>
-                      <Link href="">
+                      <Link href="#contact" onClick={() => SetNav(false)}>
                         <li className="py-4 text-sm">Contact</li>
                       </Link>
                     </ul>
                   </div>
-                  
                 </div>
               </div>
             </div>
