@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsFillPersonLinesFill, BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
  
@@ -21,7 +21,7 @@ export const Contact = () => {
             data-aos-offset="300"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
-            className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4"
+            className="lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4"
           >
             <div className="lg:p-4 h-full ">
               <div>
@@ -44,30 +44,46 @@ export const Contact = () => {
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14">
+                  <Link
+                    href={"https://www.facebook.com/eshan.benjamin01/"}
+                    target="_blank"
+                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14"
+                  >
                     <FaFacebookF size={30}></FaFacebookF>
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
+                  </Link>
+                  <Link
+                    href={"https://github.com/3shaan"}
+                    target="_blank"
+                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14"
+                  >
                     <FaGithub size={30}></FaGithub>
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
+                  </Link>
+                  <Link
+                    href={"https://www.linkedin.com/in/3shaan/"}
+                    target="_blank"
+                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14"
+                  >
                     <FaLinkedinIn size={30}></FaLinkedinIn>
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5]">
+                  </Link>
+                  <Link
+                    href="mailto:eshan.ahammed1204@gmail.com"
+                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14"
+                  >
                     <AiOutlineMail size={30}></AiOutlineMail>
-                  </div>
+                  </Link>
+                 
                 </div>
               </div>
             </div>
           </div>
-    
+
           {/* right */}
           <div
             data-aos="fade-left"
             data-aos-offset="300"
             data-aos-duration="1000"
             data-aos-easing="ease-in-sine"
-            className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4"
+            className="lg:col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4"
           >
             <div className="p-4">
               <form

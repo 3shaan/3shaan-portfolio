@@ -27,8 +27,8 @@ export const ProjectCard = ({ project }) => {
               />
             </div>
             <div className="mt-3">
-              <div className="grid grid-cols-4 gap-3 py-2">
-                <p className="rounded-full py-1 px-2 shadow-2xl shadow-gray-200 bg-primary/80 text-white font-semibold text-sm text-center">
+              <div className="md:grid grid-cols-4 gap-3 py-2 hidden ">
+                <p className="rounded-full py-1 px-2 shadow-2xl shadow-gray-200 bg-primary/80 text-white font-semibold text-xs lg:text-sm text-center">
                   React
                 </p>
                 <p className="rounded-full py-1 px-2 shadow-2xl shadow-gray-200 bg-primary/80 text-white font-semibold text-sm text-center">

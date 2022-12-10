@@ -1,17 +1,11 @@
 import { Tab } from "@headlessui/react";
-import html from "../public/html.png";
-import css from "../public/css.png";
-import node from "../public/node.png";
-import firebase from "../public/firebase.png";
-import js from "../public/js.png";
-import react from "../public/react.png";
-import mongo from "../public/mongodb.png";
 import { useState } from "react";
 import {
   buildStyles,
   CircularProgressbarWithChildren,
 } from "react-circular-progressbar";
 import Image from "next/image";
+import ReactVisibilitySensor from "react-visibility-sensor";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -50,23 +44,30 @@ export default function SkillTabs({ front_end, back_end, tools }) {
         >
           {front_end.map((front) => (
             <div key={front?.id} className="w-28 relative group">
-              <CircularProgressbarWithChildren
-                value={front?.percentage}
-                styles={buildStyles({
-                  pathColor: "#5651e5",
-                })}
-              >
-                <Image
-                  className="group-hover:opacity-30 duration-500 ease-in-out"
-                  src={front?.img}
-                  width={70}
-                  height={50}
-                  alt=""
-                />
-                <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 duration-300 ease-in-out text-2xl text-gray-700">
-                  {front.percentage}%
-                </h3>
-              </CircularProgressbarWithChildren>
+              <ReactVisibilitySensor>
+                {({ isVisible }) => {
+                  const percent = isVisible ? front?.percentage : 0;
+                  return (
+                    <CircularProgressbarWithChildren
+                      value={percent}
+                      styles={buildStyles({
+                        pathColor: "#5651e5",
+                      })}
+                    >
+                      <Image
+                        className="group-hover:opacity-30 duration-500 ease-in-out"
+                        src={front?.img}
+                        width={70}
+                        height={50}
+                        alt=""
+                      />
+                      <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 duration-300 ease-in-out text-2xl text-gray-700">
+                        {percent}%
+                      </h3>
+                    </CircularProgressbarWithChildren>
+                  );
+                }}
+              </ReactVisibilitySensor>
             </div>
           ))}
         </Tab.Panel>
@@ -75,23 +76,30 @@ export default function SkillTabs({ front_end, back_end, tools }) {
         >
           {back_end.map((front) => (
             <div key={front?.id} className="w-28 relative group">
-              <CircularProgressbarWithChildren
-                value={front?.percentage}
-                styles={buildStyles({
-                  pathColor: "#5651e5",
-                })}
-              >
-                <Image
-                  className="group-hover:opacity-30 duration-500 ease-in-out"
-                  src={front?.img}
-                  width={70}
-                  height={50}
-                  alt=""
-                />
-                <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 duration-300 ease-in-out text-2xl text-gray-700">
-                  {front.percentage}%
-                </h3>
-              </CircularProgressbarWithChildren>
+              <ReactVisibilitySensor>
+                {({ isVisible }) => {
+                  const percent = isVisible ? front?.percentage : 0;
+                  return (
+                    <CircularProgressbarWithChildren
+                      value={percent}
+                      styles={buildStyles({
+                        pathColor: "#5651e5",
+                      })}
+                    >
+                      <Image
+                        className="group-hover:opacity-30 duration-500 ease-in-out"
+                        src={front?.img}
+                        width={70}
+                        height={50}
+                        alt=""
+                      />
+                      <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 duration-300 ease-in-out text-2xl text-gray-700">
+                        {percent}%
+                      </h3>
+                    </CircularProgressbarWithChildren>
+                  );
+                }}
+              </ReactVisibilitySensor>
             </div>
           ))}
         </Tab.Panel>
@@ -100,23 +108,31 @@ export default function SkillTabs({ front_end, back_end, tools }) {
         >
           {tools.map((front) => (
             <div key={front?.id} className="w-28 relative group">
-              <CircularProgressbarWithChildren
-                value={front?.percentage}
-                styles={buildStyles({
-                  pathColor: "#5651e5",
-                })}
-              >
-                <Image
-                  className="group-hover:opacity-30 duration-500 ease-in-out"
-                  src={front?.img}
-                  width={70}
-                  height={50}
-                  alt=""
-                />
-                <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 duration-300 ease-in-out text-2xl text-gray-700">
-                  {front.percentage}%
-                </h3>
-              </CircularProgressbarWithChildren>
+              <ReactVisibilitySensor>
+                {({ isVisible}) => {
+                  const percent = isVisible ? front?.percentage : 0;
+                  
+                  return (
+                    <CircularProgressbarWithChildren
+                      value={percent}
+                      styles={buildStyles({
+                        pathColor: "#5651e5",
+                      })}
+                    >
+                      <Image
+                        className="group-hover:opacity-30 duration-500 ease-in-out"
+                        src={front?.img}
+                        width={70}
+                        height={50}
+                        alt=""
+                      />
+                      <h3 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 duration-300 ease-in-out text-2xl text-gray-700">
+                        {percent}%
+                      </h3>
+                    </CircularProgressbarWithChildren>
+                  );
+                }}
+              </ReactVisibilitySensor>
             </div>
           ))}
         </Tab.Panel>

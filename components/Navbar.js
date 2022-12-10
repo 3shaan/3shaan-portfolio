@@ -122,25 +122,7 @@ const Navbar = () => {
                       </Link>
                     </ul>
                   </div>
-                  <div>
-                    <p className="uppercase text-xl text-[#5651e5]">
-                      Lets Connect
-                    </p>
-                    <div className="flex justify-between w-[80%] my-4 mx-auto">
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                        <FaFacebook size={30}></FaFacebook>
-                      </div>
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                        <FaGithub size={30}></FaGithub>
-                      </div>
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                        <FaLinkedinIn size={30}></FaLinkedinIn>
-                      </div>
-                      <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                        <AiOutlineMail size={30}></AiOutlineMail>
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>

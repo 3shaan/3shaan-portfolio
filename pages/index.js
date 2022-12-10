@@ -20,22 +20,16 @@ import { ScrollContainer, ScrollPage } from "react-scroll-motion";
 //   console.log("You are on the server");
 // }
 
-export default function Home({ data , front_end, back_end, tools}) {
+export default function Home({ data, front_end, back_end, tools }) {
   // console.log(data);
   useEffect(() => {
     Aos.init({
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 50,
+      easing: "ease-in-sine",
+      once: false,
+      // offset: 50,
+      mirror: true,
     });
   }, []);
-
-  // react scroll motion
-
-  const Animator = dynamic(
-    import("react-scroll-motion").then((it) => it.Animator),
-    { ssr: false }
-  );
 
   return (
     <div>
@@ -47,20 +41,19 @@ export default function Home({ data , front_end, back_end, tools}) {
 
       <div>
         <div>
-          <ScrollContainer>
-            <ScrollPage>
-              <Main></Main>
-            </ScrollPage>
-            <ScrollPage>
-              <AboutMe></AboutMe>
-            </ScrollPage>
+          <Main></Main>
 
-            <Skill front_end={front_end} back_end={back_end} tools={tools}></Skill>
+          <AboutMe></AboutMe>
 
-            <Project projects={data}></Project>
+          <Skill
+            front_end={front_end}
+            back_end={back_end}
+            tools={tools}
+          ></Skill>
 
-            <Contact></Contact>
-          </ScrollContainer>
+          <Project projects={data}></Project>
+
+          <Contact></Contact>
         </div>
       </div>
     </div>
@@ -75,13 +68,13 @@ export const getStaticProps = async () => {
   const res3 = await fetch(
     "https://portfolio-server-3shaan.vercel.app/skills?skill=Back-end"
   );
-    const res4 = await fetch(
-      "https://portfolio-server-3shaan.vercel.app/skills?skill=tools"
-    );
+  const res4 = await fetch(
+    "https://portfolio-server-3shaan.vercel.app/skills?skill=tools"
+  );
   const data = await res.json();
 
   const front_end = await res2.json();
- 
+
   const back_end = await res3.json();
 
   const tools = await res4.json();
@@ -91,9 +84,8 @@ export const getStaticProps = async () => {
       data,
       front_end,
       back_end,
-      tools
+      tools,
     },
     revalidate: 60,
   };
 };
-

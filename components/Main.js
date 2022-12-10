@@ -1,11 +1,11 @@
+import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
+import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebook, FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Animator, batch, Fade, FadeIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
 import Typewriter from "typewriter-effect";
 
 export const Main = () => {
-  const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-  // const FadeUp = batch(Fade(), Move(), Sticky());
   return (
     <div id="home" className="w-full h-[700px]">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
@@ -24,50 +24,72 @@ export const Main = () => {
           {/* <h1 className="py-4 text-gray-700 w-8/12 mx-auto">
             Hi, I&#39;m <span className="text-[#5651e5]"> Eshan</span>
           </h1> */}
-          <Animator animation={batch(Fade(), MoveOut(1120, 0))}>
-            <h2
-              // data-aos="fade-right"
-              // data-aos-offset="300"
-              // data-aos-duration="1000"
-              // data-aos-easing="ease-in-sine"
-              className="py-4 text-gray-700 w-8/12 mx-auto"
-            >
-              A Front-End Web Developer
-            </h2>
-          </Animator>
+
+          <h2
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine"
+            data-aos-mirror="true"
+            className="py-4 text-gray-700 w-8/12 mx-auto"
+          >
+            A Front-End Web Developer
+          </h2>
+
           <p
-          // data-aos="fade-left"
-          // data-aos-offset="300"
-          // data-aos-duration="1000"
-          // data-aos-easing="ease-in-sine"
-          // className="text-xl w-8/12 mx-auto"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine"
+            className="text-xl w-8/12 mx-auto"
+            data-aos-mirror="true"
           >
             I am a Junior Full Stack developer. This is my Portfolio. if u like
             my works and hire me, then please contact.
           </p>
           <div
-          // data-aos="fade-up"
-          // data-aos-anchor-placement="center-bottom"
-          // data-aos-offset="300"
-          // data-aos-duration="1000"
-          // data-aos-easing="ease-in-sine"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-offset="300"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine"
+            data-aos-mirror="true"
           >
-            <Animator animation={batch(Fade(), MoveOut(-1120, 0))}>
-              <div className=" grid grid-cols-4 md:grid-cols-4  w-8/12 gap-10 my-4 mx-auto">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14">
-                  <FaFacebookF size={30}></FaFacebookF>
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14">
-                  <FaGithub size={30}></FaGithub>
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14">
-                  <FaLinkedinIn size={30}></FaLinkedinIn>
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-1 ease-in duration-300 text-[#5651e5] w-14">
-                  <AiOutlineMail size={30}></AiOutlineMail>
-                </div>
-              </div>
-            </Animator>
+            <div className=" grid grid-cols-5 md:grid-cols-5  w-8/12 gap-10 my-4 mx-auto">
+              <Link
+                href={"https://www.facebook.com/eshan.benjamin01/"}
+                target="_blank"
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  hover:-translate-y-2 ease-in duration-300 text-[#5651e5] w-14"
+              >
+                <FaFacebookF size={30}></FaFacebookF>
+              </Link>
+              <Link
+                href={"https://github.com/3shaan"}
+                target="_blank"
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-2 ease-in duration-300 text-[#5651e5] w-14"
+              >
+                <FaGithub size={30}></FaGithub>
+              </Link>
+              <Link
+                href={"https://www.linkedin.com/in/3shaan/"}
+                target="_blank"
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-2 ease-in duration-300 text-[#5651e5] w-14"
+              >
+                <FaLinkedinIn size={30}></FaLinkedinIn>
+              </Link>
+              <Link
+                href="mailto:eshan.ahammed1204@gmail.com"
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-2 ease-in duration-300 text-[#5651e5] w-14"
+              >
+                <AiOutlineMail size={30}></AiOutlineMail>
+              </Link>
+              <Link
+                href="https://wa.me/+8801303694937" target="_blank"
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-2 ease-in duration-300 text-[#5651e5] w-14"
+              >
+                <BsWhatsapp size={30}></BsWhatsapp>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
