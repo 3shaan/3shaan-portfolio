@@ -8,9 +8,10 @@ import { Project } from "../components/Project";
 import { Skill } from "../components/Skill";
 import Aos from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-import { useEffect } from "react";
+import { useCallback, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { ScrollContainer, ScrollPage } from "react-scroll-motion";
+import { ParticleBackground } from "../components/ParticleJs/particleBackground";
 // ..
 
 // if (typeof window !== "undefined") {
@@ -22,14 +23,16 @@ import { ScrollContainer, ScrollPage } from "react-scroll-motion";
 
 export default function Home({ data, front_end, back_end, tools }) {
   // console.log(data);
-  useEffect(() => {
-    Aos.init({
-      easing: "ease-in-sine",
-      once: false,
-      // offset: 50,
-      mirror: true,
-    });
-  }, []);
+  // useEffect(() => {
+  //   Aos.init({
+  //     easing: "ease-in-sine",
+  //     once: false,
+  //     offset: 50,
+  //     // mirror: true,
+  //   });
+  // }, []);
+  
+
 
   return (
     <div>
@@ -41,6 +44,7 @@ export default function Home({ data, front_end, back_end, tools }) {
 
       <div>
         <div>
+         
           <Main></Main>
 
           <AboutMe></AboutMe>
