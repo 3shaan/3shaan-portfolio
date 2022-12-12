@@ -12,7 +12,7 @@ const projectDetails = ({ project }) => {
 export const getStaticProps = async ({params}) => {
   // console.log(context);
   const res = await fetch(
-    `http://localhost:5000/project?id=${params.projectDetails}`
+    `https://portfolio-server-tau.vercel.app/project?id=${params.projectDetails}`
   );
   const project = await res.json();
   return {
