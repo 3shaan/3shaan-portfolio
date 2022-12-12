@@ -20,6 +20,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-image-gallery": "^1.2.11",
+    "react-reveal": "^1.2.2",
     "react-scroll-motion": "^0.3.2",
     "react-tsparticles": "^2.6.0",
     "react-visibility-sensor": "^5.1.1",

@@ -53,7 +53,9 @@ export default function Home({ data, front_end, back_end, tools }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch("https://portfolio-server-tau.vercel.app/project");
+  const res = await fetch(
+    "https://portfolio-server-3shaan.vercel.app//project"
+  );
   const res2 = await fetch(
     "https://portfolio-server-3shaan.vercel.app/skills?skill=front-end"
   );

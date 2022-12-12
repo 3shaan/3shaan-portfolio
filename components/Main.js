@@ -2,8 +2,8 @@ import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebook, FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { Animator, batch, Fade, FadeIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
 import Typewriter from "typewriter-effect";
+import Fade from "react-reveal/Fade";
 
 export const Main = () => {
   return (
@@ -25,25 +25,17 @@ export const Main = () => {
             Hi, I&#39;m <span className="text-[#5651e5]"> Eshan</span>
           </h1> */}
 
-          <h2
-            data-aos="fade-right"
-            data-aos-duration="1000"
-      
-            className="py-4 text-gray-700 w-8/12 mx-auto"
-          >
-            A Front-End Web Developer
-          </h2>
+          <Fade>
+            <h2 className="py-4 text-gray-700 text-center">
+              A Front-End Web Developer
+            </h2>
+          </Fade>
 
-          <p
-           
-            className="text-xl w-8/12 mx-auto"
-          
-          >
-            I am a Junior Full Stack developer.I love to build feature-rich website.
+          <p className="text-xl text-center">
+            I am a Junior Full Stack developer.I love to build feature-rich
+            website.
           </p>
-          <div
-     
-          >
+          <div>
             <div className=" grid grid-cols-5 md:grid-cols-5  w-8/12 gap-10 my-4 mx-auto">
               <Link
                 href={"https://www.facebook.com/eshan.benjamin01/"}
@@ -73,7 +65,8 @@ export const Main = () => {
                 <AiOutlineMail size={30}></AiOutlineMail>
               </Link>
               <Link
-                href="https://wa.me/+8801303694937" target="_blank"
+                href="https://wa.me/+8801303694937"
+                target="_blank"
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:-translate-y-2 ease-in duration-300 text-[#5651e5] w-14"
               >
                 <BsWhatsapp size={30}></BsWhatsapp>

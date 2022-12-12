@@ -1,7 +1,9 @@
 import ReactImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import { AiFillGithub, AiOutlineGlobal } from "react-icons/ai";
+import Link from "next/link";
 export const ProjectDetails = ({ project }) => {
-  const { title, img, desc, features, tech } = project;
+  const { title, img, desc, features, tech , github, git_server, demo} = project;
   console.log(project)
   const images = [
     {
@@ -30,12 +32,30 @@ export const ProjectDetails = ({ project }) => {
             ></ReactImageGallery>
           </div>
           <div className="lg:w-6/12 mt-5">
+            <div className="flex justify-between mb-10">
+              <Link href={github} target="_blank">
+                <button>
+                  <AiFillGithub></AiFillGithub> Github Client
+                </button>
+              </Link>
+              <Link href={git_server} target="_blank">
+                <button>
+                  <AiFillGithub></AiFillGithub> Github Server
+                </button>
+              </Link>
+              <Link href={demo} target="_blank">
+                <button>
+                  <AiOutlineGlobal></AiOutlineGlobal> Live Site
+                </button>
+              </Link>
+            </div>
             <p className="text-xl ">
               <span className="font-bold">Project : </span>
               {desc}
             </p>
             <div>
               <h4 className="text-2xl my-2">Project Features : </h4>
+              <hr className="my-1 h-[1px] rounded border-0 bg-primary" />
               <ul className="list-disc">
                 {features.map((feature, i) => {
                   return (
@@ -47,6 +67,7 @@ export const ProjectDetails = ({ project }) => {
               </ul>
               <div className="mb-10">
                 <h4 className="text-2xl my-2">Technology used : </h4>
+                <hr className="my-1 h-[1px] rounded border-0 bg-primary" />
                 <ul className="list-disc">
                   {tech.map((feature, i) => {
                     return (
