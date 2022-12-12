@@ -17,10 +17,7 @@ export const AboutMe = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3">
             <div
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-sine"
+          
               className="col-span-2 order-2 lg:order-1"
             >
               <div className="mt-10 w-10/12 mx-auto lg:mx-0">
@@ -53,10 +50,7 @@ export const AboutMe = () => {
             </div>
 
             <div
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-sine"
+              
               className="order-1"
             >
               <div className="w-full h-auto hover:scale-105 ease-in duration-300 ">

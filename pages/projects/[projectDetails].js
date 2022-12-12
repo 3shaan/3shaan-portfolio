@@ -1,10 +1,12 @@
+import { ProjectDetails } from "../../components/ProjectDetails";
+
 const projectDetails = ({ project }) => {
   console.log(project)
   return (
-        <div>
-            <h1>project details</h1>
-        </div>
-    );
+    <div className="pt-20 w-10/12 mx-auto">
+      <ProjectDetails project={project}></ProjectDetails>
+    </div>
+  );
 };
 
 export const getStaticProps = async ({params}) => {

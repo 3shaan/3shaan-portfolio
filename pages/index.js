@@ -14,23 +14,11 @@ import { ScrollContainer, ScrollPage } from "react-scroll-motion";
 import { ParticleBackground } from "../components/ParticleJs/particleBackground";
 // ..
 
-// if (typeof window !== "undefined") {
-//   Aos.init();
-//   console.log("You are on the browser");
-// } else {
-//   console.log("You are on the server");
-// }
+
 
 export default function Home({ data, front_end, back_end, tools }) {
   // console.log(data);
-  // useEffect(() => {
-  //   Aos.init({
-  //     easing: "ease-in-sine",
-  //     once: false,
-  //     offset: 50,
-  //     // mirror: true,
-  //   });
-  // }, []);
+
   
 
 

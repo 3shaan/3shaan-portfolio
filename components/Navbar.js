@@ -29,38 +29,40 @@ const Navbar = () => {
           }
         >
           <div className=" flex justify-between items-center h-full w-full px-2 overflow-hidden">
-            <Image
-              className="bg-[#ecf0f3]"
-              src={logo}
-              width={150}
-              height={50}
-              alt="Eshan"
-            />
+            <Link href={'/'}>
+              <Image
+                className="bg-[#ecf0f3]"
+                src={logo}
+                width={150}
+                height={50}
+                alt="Eshan"
+              />
+            </Link>
             {/* <h1 className="text-primary italic">ΣƧΉΛП</h1> */}
 
             <div>
               <ul className="hidden md:flex ">
-                <Link href="#home">
+                <Link href="/#home">
                   <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     Home
                   </li>
                 </Link>
-                <Link href="#aboutme">
+                <Link href="/#aboutme">
                   <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     About
                   </li>
                 </Link>
-                <Link href="#skill">
+                <Link href="/#skill">
                   <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     Skill
                   </li>
                 </Link>
-                <Link href="#project">
+                <Link href="/#project">
                   <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     Project
                   </li>
                 </Link>
-                <Link href="#contact">
+                <Link href="/#contact">
                   <li className="ml-10 text-sm uppercase hover:underline hover:decoration-2 hover:decoration-primary hover:ease-in-out hover:duration-200 underline-offset-4">
                     Contact
                   </li>

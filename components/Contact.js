@@ -18,10 +18,7 @@ export const Contact = () => {
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
           <div
-            data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
+      
             className="lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4"
           >
             <div className="lg:p-4 h-full ">
@@ -79,10 +76,7 @@ export const Contact = () => {
 
           {/* right */}
           <div
-            data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
+   
             className="lg:col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4"
           >
             <div className="p-4">

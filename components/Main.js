@@ -27,32 +27,22 @@ export const Main = () => {
 
           <h2
             data-aos="fade-right"
-            data-aos-offset="300"
             data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
-            data-aos-mirror="true"
+      
             className="py-4 text-gray-700 w-8/12 mx-auto"
           >
             A Front-End Web Developer
           </h2>
 
           <p
-            data-aos="fade-left"
-            data-aos-offset="300"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
+           
             className="text-xl w-8/12 mx-auto"
-            data-aos-mirror="true"
+          
           >
             I am a Junior Full Stack developer.I love to build feature-rich website.
           </p>
           <div
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-offset="300"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-sine"
-            data-aos-mirror="true"
+     
           >
             <div className=" grid grid-cols-5 md:grid-cols-5  w-8/12 gap-10 my-4 mx-auto">
               <Link
