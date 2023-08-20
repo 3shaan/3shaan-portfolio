@@ -1,9 +1,10 @@
+"use client";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
-import { FaFacebook, FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import Typewriter from "typewriter-effect";
+import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
+import Typewriter from "typewriter-effect";
 
 export const Main = () => {
   return (
