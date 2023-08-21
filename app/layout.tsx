@@ -12,14 +12,14 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const data = await axios.get(
-    "https://portfolio-server-3shaan.vercel.app//project"
-  );
-  const frontEnd = await axios.get(
-    "https://portfolio-server-3shaan.vercel.app/skills?skill=front-end"
-  );
+  // const data = await axios.get(
+  //   "https://portfolio-server-3shaan.vercel.app//project"
+  // );
+  // const frontEnd = await axios.get(
+  //   "https://portfolio-server-3shaan.vercel.app/skills?skill=front-end"
+  // );
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <html lang="en">
