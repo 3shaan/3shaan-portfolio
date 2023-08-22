@@ -1,8 +1,10 @@
 import { Animator, batch, Move, ZoomIn } from "react-scroll-motion";
 import { ProjectCard } from "./ProjectCard";
+import projectData from './Data/projectData.json';
+import {ProjectData} from '../type/type';
 
-export const Project = ({ projects }) => {
-  // console.log(projects)
+export const Project = () => {
+  const projects:ProjectData[]  = projectData;
   return (
     <div id="project" className="w-10/12 mx-auto">
       <div className="flex gap-3 justify-center">
@@ -13,7 +15,7 @@ export const Project = ({ projects }) => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto">
         {projects.map((project) => (
-          <ProjectCard key={project._id} project={project}></ProjectCard>
+          <ProjectCard key={project.id} project={project}></ProjectCard>
         ))}
       </div>
     </div>

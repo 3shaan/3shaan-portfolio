@@ -2,13 +2,21 @@ import ReactImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { AiFillGithub, AiOutlineGlobal } from "react-icons/ai";
 import Link from "next/link";
-export const ProjectDetails = ({ project }) => {
+import { ProjectDataType } from "../type/type";
+
+interface ProjectDetailsProps {
+  project : ProjectDataType
+}
+
+
+export const ProjectDetails = ({ project }:ProjectDetailsProps) => {
   const { title, img, desc, features, tech , github, git_server, demo} = project;
-  console.log(project)
+  // console.log(project)
   const images = [
     {
       original: img[0],
       thumbnail: img[0],
+    
       
     },
     {
@@ -29,6 +37,8 @@ export const ProjectDetails = ({ project }) => {
             <ReactImageGallery
               items={images}
               originalWidth="100px"
+              showPlayButton={false}
+              autoPlay={true}
             ></ReactImageGallery>
           </div>
           <div className="lg:w-6/12 mt-5">

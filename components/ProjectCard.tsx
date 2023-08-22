@@ -6,14 +6,17 @@ import { Animator, batch, FadeIn, Move, MoveIn, Zoom, ZoomIn, ZoomOut } from "re
 import mind from "../public/mind.png";
 
 export const ProjectCard = ({ project }) => {
-  const {_id, title, banner, desc, demo, github, tech} = project;
+  const { id, title, banner, desc, demo, github, tech} = project;
+
+
+
   return (
     <div className="flex justify-center items-center my-20">
       <div>
         <div className="w-96 mx-auto p-4 shadow-xl shadow-gray-400 rounded-xl bg-white group overflow-hidden h-[510px]">
-          <div className=" transform group-hover:scale-110 ease-in-out duration-500">
+          <div className="screen h-52">
             <Image
-              className="rounded-xl"
+              className=""
               src={banner}
               alt="/"
               width={500}
@@ -51,7 +54,7 @@ export const ProjectCard = ({ project }) => {
                   <TbExternalLinkOff></TbExternalLinkOff> Live Site
                 </button>
               </Link>
-              <Link href={`/projects/${_id}`} className="text-center">
+              <Link href={`/${id}`} className="text-center">
                 <button className="w-full text-center"><TbDetails></TbDetails> see Details</button>
               </Link>
             </div>

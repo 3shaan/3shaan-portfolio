@@ -1,6 +1,7 @@
 import { AboutMe } from "../components/AboutMe";
 import { Contact } from "../components/Contact";
 import { Main } from "../components/Main";
+import { Project } from "../components/Project";
 import { Skill } from "../components/Skill";
 
 type Props = {};
@@ -11,6 +12,7 @@ export default function Home({}: Props) {
       <Main />
       <AboutMe />
       <Skill />
+      <Project/>
       <Contact />
     </section>
   );
