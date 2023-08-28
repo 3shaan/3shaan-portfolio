@@ -1,10 +1,10 @@
 import { Animator, batch, Move, ZoomIn } from "react-scroll-motion";
 import { ProjectCard } from "./ProjectCard";
 import projectData from './Data/projectData.json';
-import {ProjectData} from '../type/type';
+import {ProjectDataType} from '../type/type';
 
 export const Project = () => {
-  const projects:ProjectData[]  = projectData;
+  const projects:ProjectDataType[]  = projectData;
   return (
     <div id="project" className="w-10/12 mx-auto">
       <div className="flex gap-3 justify-center">
