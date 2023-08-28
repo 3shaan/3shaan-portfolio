@@ -1,0 +1,89 @@
+[
+  {
+    "id": "1",
+    "title": "Skill Up",
+    "desc": "It's a website for selling courses. It have dynamic and protected course description with check out page and anyone can choose and buy courses. ",
+    "github": "https://github.com/3shaan/Skill-up-Client",
+    "git_server": "https://github.com/3shaan/Skill-up-Server",
+    "demo": " https://skill-up-b1bf2.web.app/",
+    "banner": "/skill-up.png",
+    "img": [
+      "https://i.ibb.co/RbVBzFQ/skill-up-b1bf2-web-app.png",
+      "https://i.ibb.co/hWYVqxg/skill-up-b1bf2-web-app-course-w4.png",
+      "https://i.ibb.co/khd2JMS/skill-up-b1bf2-web-app-course-w4-checkout.png"
+    ],
+    "features": [
+      "authentication with Firebase",
+      "Customer can see what service we provide.",
+      "Beautyfull Course Description with Details.",
+      "Upon Clicking they will go Checkout Page",
+      "In Details page , Buyer can see product price, tax and totall price.",
+      "In Course Section, Buyer Can see all courses we provide."
+    ],
+    "tech": ["React Js", "Tailwind", "FireBase", "Node Js", "MongoDB"]
+  },
+  {
+    "id": "2",
+    "title": "Book worm",
+    "desc": "It's a Second Hand book Buy and Sell website with customized dashboard where a Seller/Buyer/Admin have a separate private route and organized their product easily.",
+    "github": "https://github.com/3shaan/BOOK-WORM-client",
+    "git_server": "https://github.com/3shaan/BOOK_WORM-Server",
+    "demo": "https://book-worm-7fe21.web.app/",
+    "banner": "/book-worm.png",
+    "img": [
+      "https://i.ibb.co/qYBhBpw/book-worm-7fe21-web-app.png",
+      "https://i.ibb.co/GW8T6Hd/book-worm-7fe21-web-app-books-637ef8ac345d495b7735e2ca.png",
+      "https://i.ibb.co/hYmjh7S/book-worm-7fe21-web-app-dashboard-myorder.png"
+    ],
+    "features": [
+      "Catagory based Product",
+      "Advertised Product in Home Section",
+      "Seller, Buyer, Admin has Different Dashboard.",
+      "Buyer can see and delete his order and wishlist.",
+      "Buyer can payment with Stripe  payment mathod.",
+      "Seller can see their product and Add new products",
+      "Seller can see who bought their product.",
+      "Seller can Contact the buyer.",
+      "admin can see all user and delete them.",
+      "Admin also can varify a seller and its will mark in beside seller name.",
+      "Admin can also see all buyer and delete them."
+    ],
+    "tech": ["React Js", "Tailwind", "FireBase", "Node Js", "MongoDB", "Stripe"]
+  },
+  {
+    "id": "3",
+    "title": "Mind Talking",
+    "desc": "It's a Personal Psychotherapist/psychologist website where patient can choose service and make sure appointment by paying on strip.",
+    "github": "https://github.com/3shaan/Mind-talking-Client",
+    "git_server": "https://github.com/3shaan/Mind-Talking-Server",
+    "demo": "https://mind-talking.web.app/",
+    "banner": "/mind-talking.png",
+    "img": [
+      "https://ibb.co/g6SntK9",
+      "https://i.ibb.co/XjWPGcX/mind-talking-web-app-services.png",
+      "https://i.ibb.co/QrXLMKC/mind-talking-web-app-services-636a67244885c74028434a53.png"
+    ],
+    "tech": [
+      "React Js",
+      "Tailwind",
+      "FireBase",
+      "Node Js",
+      "MongoDB",
+      "Stripe"
+    ],
+    "features": [
+      "User can see what service provided.",
+      "By Clicking Service secton, patient can see all services.",
+      "Detaiils description of all service.",
+      "Patient can comment/Review any service.",
+      "Patient can see all their review and can delete/Edit them",
+      "Patient can see available appointment time and Date.",
+      "Patient also can appointment with available time and date",
+      "After appointment they can pay appointment fee with Stripe.",
+      "In dashboard, They can see what service they have taken and delete them.",
+      "Admin can add services",
+      "Admin also can add doctors for appointment.",
+      "admin can appoint Doctors for any appointment"
+    ]
+  }
+]

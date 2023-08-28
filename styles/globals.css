@@ -33,3 +33,34 @@
 
   @import "react-image-gallery/styles/css/image-gallery.css";
   
+  .screen {
+    display: block;
+    /* width: 300px; */
+    /* height: 100%; */
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+  }
+  .screen img {
+    /* bottom: -600px; */
+    top: 0px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    margin:0;
+    padding:0;
+    -webkit-transition: top 11s;
+    -moz-transition: top 11s;
+    -ms-transition: top 11s;
+    -o-transition: top 11s;
+    transition: bottom 11s;
+  }
+  .screen:hover img {
+    top: -550px;
+    -webkit-transition: all 11s;
+    -moz-transition: all 11s;
+    -ms-transition: all 11s;
+    -o-transition: all 11s;
+    transition: all 11s;
+  }

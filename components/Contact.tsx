@@ -5,22 +5,19 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill, BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
- 
+
 export const Contact = () => {
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="w-10/12 m-auto px-2 py-16 ">
         <div className="flex gap-3 justify-center">
-          <hr class="my-4 w-12 md:w-48  h-1 rounded border-0 bg-primary"></hr>
+          <hr className="my-4 w-12 md:w-48  h-1 rounded border-0 bg-primary"></hr>
           <h2 className="text-primary mb-10">Contact Me</h2>
-          <hr class="my-4 w-12 md:w-48 h-1  rounded border-0 bg-primary"></hr>
+          <hr className="my-4 w-12 md:w-48 h-1  rounded border-0 bg-primary"></hr>
         </div>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <div
-      
-            className="lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4"
-          >
+          <div className="lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full ">
               <div>
                 <Image
@@ -75,10 +72,7 @@ export const Contact = () => {
           </div>
 
           {/* right */}
-          <div
-   
-            className="lg:col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4"
-          >
+          <div className="lg:col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <form
                 action="https://getform.io/f/c120796d-8da8-4221-8220-c6aa02c7e1a5"
@@ -125,7 +119,7 @@ export const Contact = () => {
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
                     className="border-2 rounded-lg p-3 border-gray-300"
-                    rows="10"
+                    rows={10}
                     name="message"
                   ></textarea>
                 </div>
