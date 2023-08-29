@@ -1,6 +1,7 @@
 import { BsGit, BsGithub } from "react-icons/bs";
 import { SkillTypes } from "./frontEndSkill";
-import { SiLinux, SiPusher, SiSocketdotio } from "react-icons/si";
+import { SiAsana, SiLinux, SiPusher, SiSocketdotio } from "react-icons/si";
+import { FaBitbucket } from "react-icons/fa";
 
 export const tools:SkillTypes[]= [
     {
@@ -22,5 +23,13 @@ export const tools:SkillTypes[]= [
     {
         name:"Pusher",
         icon:SiPusher
+    },
+    {
+        name:"Bitbucket",
+        icon:FaBitbucket
+    },
+    {
+        name:"Asana",
+        icon:SiAsana
     }
 ]

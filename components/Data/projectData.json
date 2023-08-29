@@ -85,5 +85,71 @@
       "Admin also can add doctors for appointment.",
       "admin can appoint Doctors for any appointment"
     ]
+  },
+  {
+    "id": "4",
+    "title": "Task Manager",
+    "desc": "A task Manager app where you can track your task,add task, mark it ongoing and complete.",
+    "github": "https://github.com/3shaan/Task-Manager",
+    "git_server": "https://github.com/3shaan/Task-Manager",
+    "demo": "https://task-manager-sand.vercel.app/",
+    "banner": "/task-manager.png",
+    "img": [
+      "https://ibb.co/g6SntK9",
+      "https://i.ibb.co/XjWPGcX/mind-talking-web-app-services.png",
+      "https://i.ibb.co/QrXLMKC/mind-talking-web-app-services-636a67244885c74028434a53.png"
+    ],
+    "tech": [
+      "Next js",
+      "Tailwind",
+      "Next Auth",
+      "MongoDB",
+      "Mongoose",
+      "formik"
+    ],
+    "features": [
+      "User can track their task",
+      "User can add their task",
+      "user can delete any task",
+      "user can mark task as complete and it will show their complete section",
+      "In my task section user can see all their task list",
+      "user can add task as project base",
+      "user can search their project",
+      "authentication with Next auth",
+      "dark and light mode"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Knock Knock",
+    "desc": "Knock Knock is a real time chat application where user can communicate with another users",
+    "github": "https://github.com/3shaan/knock-knock",
+    "git_server": "https://github.com/3shaan/knock-knock",
+    "demo": "https://knock-knock-omega.vercel.app/",
+    "banner": "/knock-knock.png",
+    "img": [
+      "https://ibb.co/g6SntK9",
+      "https://i.ibb.co/XjWPGcX/mind-talking-web-app-services.png",
+      "https://i.ibb.co/QrXLMKC/mind-talking-web-app-services-636a67244885c74028434a53.png"
+    ],
+    "tech": [
+      "Next js 13",
+      "Typescript",
+      "Tailwind CSS",
+      "Next Auth",
+      "Prisma",
+      "MongoDB",
+      "Cloudniary",
+      "Pusher"
+    ],
+    "features": [
+      "authentication with Next auth",
+      "Real time chat with any users",
+      "Delete Conversation with all messages",
+      "Prisma use, so code can be use for any database",
+      "Images upload with cloudinary images hosting server",
+      "real time data with pusher",
+      "offline or online status"
+    ]
   }
 ]
