@@ -14,7 +14,7 @@ export default function Experience({}: Props) {
     <div className='flex justify-between items-center'>
     <div className='lg:flex items-center gap-3 hidden'>
         <hr className="my-4 w-1.5  h-10 rounded-sm border-l bg-primary"></hr>
-        <h2 className="text-xl">jan 23 - april 23 </h2>
+        <h2 className="text-xl">Jan 23 - April 23 </h2>
         </div>
         <div>
           <ExperienceCard/>
