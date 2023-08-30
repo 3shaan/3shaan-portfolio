@@ -133,9 +133,9 @@
       "https://i.ibb.co/QrXLMKC/mind-talking-web-app-services-636a67244885c74028434a53.png"
     ],
     "tech": [
-      "Next js 13",
+      "Next js",
       "Typescript",
-      "Tailwind CSS",
+      "Tailwind",
       "Next Auth",
       "Prisma",
       "MongoDB",

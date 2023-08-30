@@ -32,7 +32,7 @@ export const Contact = () => {
                 <h2 className="py-2">Eshan Ahammed</h2>
                 <p>MERN stuck web Developer</p>
                 <p className="py-4">
-                  I am available for Intern or full-time positions. Contact me
+                  I am available for full-time and part type positions. Contact me
                   and let&apos;s talk.
                 </p>
               </div>

@@ -28,14 +28,14 @@ export const Main = () => {
 
           <Fade>
             <h2 className="py-4 text-gray-700 text-center">
-              A Front-End Web Developer
+              A Full Stack Web Developer
             </h2>
           </Fade>
 
-          <p className="text-xl text-center">
-            I am a Junior Full Stack developer.I love to build feature-rich
+          {/* <p className="text-xl text-center">
+            I am a Junior Full Stack developer. I love to build feature-rich
             website.
-          </p>
+          </p> */}
           <div>
             <div className=" grid grid-cols-5 md:grid-cols-5  w-8/12 gap-10 my-4 mx-auto">
               <Link

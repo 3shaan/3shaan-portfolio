@@ -1,6 +1,8 @@
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
+import { ParticleBackground } from "../components/ParticleJs/ParticleBackground";
+import TsParticles from "../components/ParticleJs/TsParticle";
 
 export const metadata = {
   title: "Eshan Portfolio",
@@ -24,6 +26,8 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* <ParticleBackground/> */}
+        <TsParticles/>
         <Navbar />
         {children}
       </body>

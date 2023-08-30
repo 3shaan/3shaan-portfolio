@@ -5,6 +5,8 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../public/logo.png";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 
 const Navbar = () => {
   const [nav, SetNav] = useState(false);
@@ -19,13 +21,14 @@ const Navbar = () => {
       }
     });
   }, []);
+
   return (
-    <div className="bg-red-900">
+    <div>
       <div
-        style={{ backgroundColor: "#ecf0f3" }}
+        // style={{ backgroundColor: "#ecf0f3" }}
         className={
           shadow
-            ? "fixed w-full shadow-xl z-[100] h-20 px-10 ease-in-out duration-300"
+            ? "fixed w-full shadow-xl z-[100] h-20 px-10 ease-in-out duration-300 bg-[#ecf0f3]"
             : "fixed w-full z-[100] h-20 px-10"
         }
       >

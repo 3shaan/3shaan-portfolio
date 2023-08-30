@@ -65,3 +65,13 @@
     transition: all 11s;
   }
 
+
+    .color-changing-button {
+      transition: background 0.3s ease-in-out;
+    }
+
+    .color-changing-button:hover {
+      background: linear-gradient(90deg, #4F46E5, #6EE7B7);
+      background-size: 200% 100%;
+      background-position: right;
+    }
