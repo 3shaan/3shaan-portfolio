@@ -35,7 +35,7 @@ export default function ExperienceCard({}: Props) {
                 </div>
                 <div>
                     <p>Duration</p>
-                    <p>20th Jan 2023 - 10th april 2023</p>
+                    <p>21th Jan 2023 - 29th april 2023</p>
                 </div>
                 <Link href={'https://drive.google.com/file/d/1lePPz7emH__g1s45X7v3UVm_jOoEzgls/view?usp=sharing'} target='_blank' className='flex gap-2 items-center'>
                     <FiExternalLink size={15}/>

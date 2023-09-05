@@ -4,9 +4,11 @@ import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill, BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import { HiOutlineChevronDoubleUp } from "react-icons/hi"
 
 export const Contact = () => {
+  const a = 1
+  console.log('dfdf', a)
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="w-10/12 m-auto px-2 py-16 ">

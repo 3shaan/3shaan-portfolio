@@ -1,4 +1,5 @@
-import Image from "next/image";
+
+import Image from "next/image"
 // import animePic from '../public/anime.jpg'
 import Link from "next/link";
 import profile from "../public/profile.png";
@@ -6,8 +7,10 @@ import profile from "../public/profile.png";
 export const AboutMe = () => {
   return (
     <div id="aboutme" className="w-10/12 mx-auto mb-10">
+
       <div>
         <div className="flex gap-3 justify-center">
+
           <hr className="my-4 w-12 md:w-48  h-1 rounded border-0 bg-primary"></hr>
           <h2 className="text-primary mb-10">About me</h2>
           <hr className="my-4 w-12 md:w-48 h-1  rounded border-0 bg-primary"></hr>

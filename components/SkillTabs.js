@@ -18,6 +18,8 @@ export default function SkillTabs({ front_end, back_end, tools }) {
     Tools: [],
   });
 
+  console.log()
+
   return (
     <div className="w-full px-2 py-16 sm:px-0">
       <Tab.Group>

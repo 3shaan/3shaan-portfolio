@@ -55,7 +55,7 @@ export const ProjectCard = ({ project }) => {
                 </button>
               </Link>
               <Link href={`/${id}`} className="text-center">
-                <button className="w-full text-center"><TbDetails></TbDetails> see Details</button>
+                <button className="w-full text-center"><TbDetails></TbDetails> See Details</button>
               </Link>
             </div>
           </div>
