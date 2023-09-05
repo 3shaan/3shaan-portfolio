@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
